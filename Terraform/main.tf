@@ -6,6 +6,6 @@ provider "google" {}
 # doc https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/google_project
 resource "google_project" "my_project" {
   name       = "DevOps test Project"
-  project_id = "devops-test-project"
+  project_id = "devops-test-project123"
 }
 
