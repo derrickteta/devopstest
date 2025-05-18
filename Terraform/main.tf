@@ -29,3 +29,11 @@ resource "google_sql_database_instance" "instance" {
 
   deletion_protection  = true
 }
+
+# creation of cloud storage bucket
+# dochttps://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/storage_bucket
+resource "google_storage_bucket" "static-file" {
+  name          = "static-file"
+  project = "devops-test-project123"
+  location      = "US"
+}
