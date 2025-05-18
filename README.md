@@ -26,12 +26,23 @@ This repository contains all code, configurations, and documentation for the Dev
    gcloud auth application-default login --no-launch-browser
    past the 
    ```
-8. **Launch Terraform for the first time**
+8. **Launch Terraform**
     ```bash
        cd Terraform/
        terraform init 
        terraform plan  # error on the project id, replace of the capital O letter to o letter
+       terraform apply # add 123 to project id to make it unique and solve error of project creation
+       git add 
+       git commit -m "run terraform apply, change the project id to solve the creation error, add other terraform file to the gitignore"
     ```
 
-
- 
+9. **Creation of cloud Sql instance**
+   add the creation configuration in ``main.tf`` 
+   Launch Terraform
+   ```bash
+       terraform plan  
+       terraform apply 
+       git add .
+       git commmit -m " add the config of cloud sql instance creation to main.tf, run terraform plan and apply"
+    ```
+    
