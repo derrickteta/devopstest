@@ -45,12 +45,14 @@ This repository contains all code, configurations, and documentation for the Dev
 10. **Creation of cloud Sql instance**
    - add the creation configuration in ``main.tf`` 
    - Launch Terraform
+
    ```bash
-       terraform plan  
-       terraform apply 
-       git add .
-       git commit -m " add the config of cloud sql instance creation to main.tf, run terraform plan and apply"
+         terraform plan  
+         terraform apply 
+         git add .
+         git commit -m " add the config of cloud sql instance creation to main.tf, run terraform plan and apply"
     ```
+
 11. **Creation of  CloudStorage bucket**
    add the creation configuration in ``main.tf`` 
    Launch Terraform
@@ -88,6 +90,7 @@ This repository contains all code, configurations, and documentation for the Dev
        git add .
        git commit -m "creation of the image and push it to the artefact registry in gcp"
     ```
+    
 14. **Github Action Workflow**
       - go to the project on github => github action => search cloud_run => on Build and Deploy to Cloud Run, click configure => modify the generated code with our elements and commit changes.
       - go to gcp console:
