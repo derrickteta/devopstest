@@ -19,13 +19,17 @@ This repository contains all code, configurations, and documentation for the Dev
 
 6. **Version Control**  
    Added and committed all files using Git with appropriate commit messages.
-
-7. **Authentication to GCP (Without Existing Project)**  
+    ```bash
+       git add .
+       git commit -m "creation of the main.tf file selection of the provider and creation of the project"
+    ```
+   
+8. **Authentication to GCP (Without Existing Project)**  
    Used the following command to authenticate to Google Cloud using **Application Default Credentials**:
    ```bash
    gcloud auth application-default login --no-launch-browser 
    ```
-8. **Launch Terraform**
+9. **Launch Terraform**
     ```bash
        cd Terraform/
        terraform init 
@@ -34,7 +38,7 @@ This repository contains all code, configurations, and documentation for the Dev
        git add .
        git commit -m "run terraform apply, change the project id to solve the creation error, add other terraform file to the gitignore"
     ```
-9. **Creation of a service account**
+10. **Creation of a service account**
    now that we have created a project let's configure a service account to use:
    - gcp console => IAM and Admin => service Account => create service account
    - authenticate using the service account 
@@ -42,7 +46,7 @@ This repository contains all code, configurations, and documentation for the Dev
     ```bash
        gcloud auth activate-service-account automation@devops-test-project123.iam.gserviceaccount.com --key-file=devops-test-project123-83429cfd0b6a.json --project=devops-test-project123
     ```
-10. **Creation of cloud Sql instance**
+11. **Creation of cloud Sql instance**
    - add the creation configuration in `main.tf`
    - Launch Terraform
     ```bash
