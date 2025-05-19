@@ -43,8 +43,8 @@ This repository contains all code, configurations, and documentation for the Dev
        gcloud auth activate-service-account automation@devops-test-project123.iam.gserviceaccount.com --key-file=devops-test-project123-83429cfd0b6a.json --project=devops-test-project123
     ```
 10. **Creation of cloud Sql instance**
-   add the creation configuration in ``main.tf`` 
-   Launch Terraform
+   - add the creation configuration in ``main.tf`` 
+   - Launch Terraform
    ```bash
        terraform plan  
        terraform apply 
