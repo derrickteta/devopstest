@@ -61,7 +61,7 @@ resource "google_cloud_run_service" "default" {
   template {
     spec {
       containers {
-        image = "us-docker.pkg.dev/cloudrun/container/hello"
+        image = "us-central1-docker.pkg.dev/devops-test-project123/devops-test-repo123/php-nginx-app:v1"
         ports {
           container_port = 8080
         }
