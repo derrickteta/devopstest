@@ -63,8 +63,8 @@ This repository contains all code, configurations, and documentation for the Dev
    ```
 
 12. **Creation of an artefact registry in gcp**
-   - enabling Artifact Registry in the gcp console API #https://console.developers.google.com/apis/api/artifactregistry.googleapis.com/overview?project=devops-test-project123
-
+   - enabling Artifact Registry in the gcp console API
+   - doc https://console.developers.google.com/apis/api/artifactregistry.googleapis.com/overview?project=devops-test-project123
    - add the creation configuration in `main.tf`
    - Launch Terraform
    ```bash
