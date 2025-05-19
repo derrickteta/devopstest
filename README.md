@@ -31,7 +31,7 @@ This repository contains all code, configurations, and documentation for the Dev
        terraform init 
        terraform plan  # error on the project id, replace of the capital O letter to o letter
        terraform apply # add 123 to project id to make it unique and solve error of project creation
-       git add 
+       git add .
        git commit -m "run terraform apply, change the project id to solve the creation error, add other terraform file to the gitignore"
     ```
 9. **Creation of a service account**
@@ -68,11 +68,11 @@ This repository contains all code, configurations, and documentation for the Dev
    - add the creation configuration in `main.tf`
    - Launch Terraform
    ```bash
-       terraform plan  
-       terraform apply 
-       git add .
-       git commit -m "add the config of artefact registry creation to main.tf, run terraform plan and apply"
-    ```
+         terraform plan
+         terraform apply
+         git add .
+         git commit -m "add the config of artefact registry creation to main.tf, run terraform plan and apply"
+   ```
 
 13. **Creation of the image in the artefact registry**
    - creation of the file start.sh that content the script lauching php-frp and nginx in the container
