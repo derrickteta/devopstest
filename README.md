@@ -43,7 +43,7 @@ This repository contains all code, configurations, and documentation for the Dev
        gcloud auth activate-service-account automation@devops-test-project123.iam.gserviceaccount.com --key-file=devops-test-project123-83429cfd0b6a.json --project=devops-test-project123
     ```
 10. **Creation of cloud Sql instance**
-   - add the creation configuration in ``main.tf`` 
+   - add the creation configuration in `main.tf`
    - Launch Terraform
     ```bash
        terraform plan  
@@ -53,7 +53,7 @@ This repository contains all code, configurations, and documentation for the Dev
     ```
 
 11. **Creation of  CloudStorage bucket**
-   add the creation configuration in ``main.tf`` 
+   add the creation configuration in `main.tf`
    Launch Terraform
    ```bash
        terraform plan  
@@ -65,7 +65,7 @@ This repository contains all code, configurations, and documentation for the Dev
 12. **Creation of an artefact registry in gcp**
    - enabling Artifact Registry in the gcp console API #https://console.developers.google.com/apis/api/artifactregistry.googleapis.com/overview?project=devops-test-project123
 
-   add the creation configuration in ``main.tf`` 
+   add the creation configuration in `main.tf`
    Launch Terraform
    ```bash
        terraform plan  
@@ -79,7 +79,8 @@ This repository contains all code, configurations, and documentation for the Dev
    - creation of the src folder that content the file index.php of our hello world!
    - creation of nginx.conf that contents the configuration of nginx for serving static files and proxying requests to the PHP-FPM
    - creation of the dockerfile 
-    ```bash
+ 
+   ```bash
        docker build -t php-fpm-nginx-app .
        docker run -d -p 8080:8080 php-fpm-nginx-app
        curl http://localhost:8080 # to check that the file is served
