@@ -45,12 +45,11 @@ This repository contains all code, configurations, and documentation for the Dev
 10. **Creation of cloud Sql instance**
    - add the creation configuration in ``main.tf`` 
    - Launch Terraform
-
-   ```bash
-         terraform plan  
-         terraform apply 
-         git add .
-         git commit -m " add the config of cloud sql instance creation to main.tf, run terraform plan and apply"
+    ```bash
+       terraform plan  
+       terraform apply 
+       git add .
+       git commit -m "add the config of cloud sql instance creation to main.tf, run terraform plan and apply"
     ```
 
 11. **Creation of  CloudStorage bucket**
@@ -80,7 +79,7 @@ This repository contains all code, configurations, and documentation for the Dev
    - creation of the src folder that content the file index.php of our hello world!
    - creation of nginx.conf that contents the configuration of nginx for serving static files and proxying requests to the PHP-FPM
    - creation of the dockerfile 
-   ```bash
+    ```bash
        docker build -t php-fpm-nginx-app .
        docker run -d -p 8080:8080 php-fpm-nginx-app
        curl http://localhost:8080 # to check that the file is served
@@ -89,16 +88,15 @@ This repository contains all code, configurations, and documentation for the Dev
        docker push us-central1-docker.pkg.dev/devops-test-project123/devops-test-repo123/php-nginx-app:v1
        git add .
        git commit -m "creation of the image and push it to the artefact registry in gcp"
-    ```
-    
+   ```
+
 14. **Github Action Workflow**
       - go to the project on github => github action => search cloud_run => on Build and Deploy to Cloud Run, click configure => modify the generated code with our elements and commit changes.
       - go to gcp console:
         IAM and Admin => workload Identity pool and provider => new workload provider and pool
       ```bash
-      git add .
-      git commit -m "creation of the workflow for of build and push a Docker container to Google Artifact Registry and deploy it on Cloud Run when a commit is pushed to the main branch."
-
+         git add .
+         git commit -m "creation of the workflow for of build and push a Docker container to Google Artifact Registry and deploy it on Cloud Run when a commit is pushed to the main branch."
       ```
   
     
