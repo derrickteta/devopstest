@@ -38,7 +38,7 @@ This repository contains all code, configurations, and documentation for the Dev
    now that we have created a project let's configure a service account to use:
    - gcp console => IAM and Admin => service Account => create service account
    - authenticate using the service account 
-   # doc https://cloud.google.com/sdk/gcloud/reference/auth/activate-service-account
+   - doc https://cloud.google.com/sdk/gcloud/reference/auth/activate-service-account
     ```bash
        gcloud auth activate-service-account automation@devops-test-project123.iam.gserviceaccount.com --key-file=devops-test-project123-83429cfd0b6a.json --project=devops-test-project123
     ```
