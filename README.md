@@ -53,20 +53,20 @@ This repository contains all code, configurations, and documentation for the Dev
     ```
 
 11. **Creation of  CloudStorage bucket**
-   add the creation configuration in `main.tf`
-   Launch Terraform
-   ```bash
+   - add the creation configuration in `main.tf`
+   - Launch Terraform
+   ``` bash
        terraform plan  
        terraform apply 
        git add .
        git commit -m " add the config of  Cloud Storage bucket creation to main.tf, run terraform plan and apply"
-    ```
+   ```
 
 12. **Creation of an artefact registry in gcp**
    - enabling Artifact Registry in the gcp console API #https://console.developers.google.com/apis/api/artifactregistry.googleapis.com/overview?project=devops-test-project123
 
-   add the creation configuration in `main.tf`
-   Launch Terraform
+   - add the creation configuration in `main.tf`
+   - Launch Terraform
    ```bash
        terraform plan  
        terraform apply 
@@ -94,7 +94,7 @@ This repository contains all code, configurations, and documentation for the Dev
 14. **Github Action Workflow**
       - go to the project on github => github action => search cloud_run => on Build and Deploy to Cloud Run, click configure => modify the generated code with our elements and commit changes.
       - go to gcp console:
-        IAM and Admin => workload Identity pool and provider => new workload provider and pool
+      - IAM and Admin => workload Identity pool and provider => new workload provider and pool
       ```bash
          git add .
          git commit -m "creation of the workflow for of build and push a Docker container to Google Artifact Registry and deploy it on Cloud Run when a commit is pushed to the main branch."
